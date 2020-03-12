@@ -16,6 +16,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             // 指定檔案的位置產生 html 文件
             filename: __dirname + '/index.html',
+            // 指定 html 使用的樣板
+            template: __dirname + '/app/index.html',
         }),
     ],
 };
