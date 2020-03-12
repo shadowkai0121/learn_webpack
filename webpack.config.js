@@ -29,6 +29,15 @@ module.exports = {
                     'css-loader',
                 ],
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)/,
+                loader: 'url-loader',
+                options: {
+                    limit: false,
+                    name: '[hash:7].[ext]',
+                    publicPath: 'build/'
+                },
+            },
         ],
     },
 };
