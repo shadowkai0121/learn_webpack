@@ -20,4 +20,15 @@ module.exports = {
             template: __dirname + '/app/index.html',
         }),
     ],
+    module: {
+        rule:[
+            {
+                test: /\.css$/, // 指定 .css 結尾的檔案用那些 loader 處理
+                use: [
+                    'style-loader',
+                    'css-loader',
+                ],
+            },
+        ],
+    },
 };
