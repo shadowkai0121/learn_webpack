@@ -14,8 +14,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            // 指定檔案的位置產生 html 文件
-            filename: __dirname + '/index.html',
             // 指定 html 使用的樣板
             template: __dirname + '/app/index.html',
         }),
@@ -34,7 +32,7 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     limit: false,
-                    name: '[hash:7].[ext]',
+                    name: '[name].[ext]',
                     publicPath: 'build/'
                 },
             },
