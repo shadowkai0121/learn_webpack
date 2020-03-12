@@ -1,0 +1,8 @@
+```
+npm install webpack webpack-cli --save-dev
+npm install --save-dev html-webpack-plugin
+npm install --save jquery
+npm install --save-dev style-loader css-loader
+npm install --save-dev url-loader
+```
+

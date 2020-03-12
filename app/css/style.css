@@ -1,0 +1,12 @@
+#app {
+    position: absolute;
+    font-family: 'death-note';
+    font-size: 300px;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+h3 {
+    text-align: center;
+}
